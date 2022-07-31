@@ -4,10 +4,46 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import LoginPage from './containers/LoginPage';
+import RegisterPage from './containers/RegisterPage';
+
+import ProtectedComponent from './components/ProtectedComponent';
+import ProtectedComponentLogged from './components/ProtectedComponentLogged';
+import About from './containers/About';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={
+          <ProtectedComponent>
+            <ProtectedComponentLogged>
+              <App />
+            </ProtectedComponentLogged>
+          </ProtectedComponent>
+        } />
+        <Route path="login" element={
+          <ProtectedComponentLogged>
+            <LoginPage />
+          </ProtectedComponentLogged>
+        } />
+        <Route path="register" element={
+          <ProtectedComponentLogged>
+            <RegisterPage />
+          </ProtectedComponentLogged>
+        } />
+        <Route path="about" element={
+            <ProtectedComponentLogged>
+              <About />
+            </ProtectedComponentLogged> 
+        } />
+        <Route path="*" element={<h1>404 - Halaman tidak ditemukan</h1>} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
