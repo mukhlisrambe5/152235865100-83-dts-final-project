@@ -25,6 +25,7 @@ const NavBar = () => {
         <Typography variant="h8" component="div" className={styles.grow}>
             <Box sx={{ display: 'flex', gap: '2em', fontSize: '1.5em', color:"inherit"}}>
               <Link to="/" style={{textDecoration: 'none', color: 'white'}}>Home</Link>
+              <Link to="/search" style={{marginLeft:"0.5em", textDecoration: 'none', color: 'white'}}>Search</Link>
               <Link to="about" style={{marginLeft:"0.5em", textDecoration: 'none', color: 'white'}}>About</Link>
             </Box>
           </Typography>

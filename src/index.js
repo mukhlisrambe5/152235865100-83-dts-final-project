@@ -13,6 +13,7 @@ import RegisterPage from './containers/RegisterPage';
 import ProtectedComponent from './components/ProtectedComponent';
 import ProtectedComponentLogged from './components/ProtectedComponentLogged';
 import About from './containers/About';
+import Search from './containers/Search';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -35,6 +36,11 @@ root.render(
           <ProtectedComponentLogged>
             <RegisterPage />
           </ProtectedComponentLogged>
+        } />
+        <Route path="search" element={
+            <ProtectedComponentLogged>
+              <Search />
+            </ProtectedComponentLogged> 
         } />
         <Route path="about" element={
             <ProtectedComponentLogged>
