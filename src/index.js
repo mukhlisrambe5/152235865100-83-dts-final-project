@@ -14,6 +14,7 @@ import ProtectedComponent from './components/ProtectedComponent';
 import ProtectedComponentLogged from './components/ProtectedComponentLogged';
 import About from './containers/About';
 import Search from './containers/Search';
+import DetailPage from './containers/DetailPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -27,6 +28,12 @@ root.render(
             </ProtectedComponentLogged>
           </ProtectedComponent>
         } />
+        <Route path='/browse/categories/:id' element= {
+          <ProtectedComponent>
+            <DetailPage/>
+          </ProtectedComponent>
+        } props= 'true'
+          />
         <Route path="login" element={
           <ProtectedComponentLogged>
             <LoginPage />
