@@ -1,5 +1,8 @@
 .container {
   padding: 1em;
   margin: 1em 0em;
-  border: 1px dashed grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }

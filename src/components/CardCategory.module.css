@@ -1,12 +1,10 @@
 .boxy {
   padding: 1em;
   margin: 1em 0em;
-  border: 1px dashed grey;
   margin: auto;
   display: flex;
-  flex-direction: row;
-  align-self: center;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  gap: 2em;
   flex-wrap: wrap;
 }

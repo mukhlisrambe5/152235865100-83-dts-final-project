@@ -16,12 +16,13 @@ const CardCategory = ({propMusic})=> {
   return (
     <>  
       <Card  >
-        <Box sx={{display:"flex", flexDirection:"column", alignItems:"center", marginBottom: '1em'}}>        
+        <Box className={styles.boxy}>        
               <CardMedia component="img"
               sx={{width:300}}
               image={`${propMusic.icons[0].url}`}
               alt="CategoriesImage"
               ></CardMedia>
+              
               <CardContent>
               <Typography variant="h6" sx={{textAlign: 'center'}}>{propMusic.name}</Typography>
               </CardContent>
