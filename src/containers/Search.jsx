@@ -109,7 +109,7 @@ const Search = ()=>{
           <div className={styles.container}>
               <div className={styles.containerOption}>
                 <div className={styles.genre}>
-                  <label htmlFor="" style={{marginRight: '1em', color: '#468FEA'}}>Genre:</label>
+                  <label htmlFor="" style={{marginRight: '1.1em', color: '#468FEA'}}>Genre:</label>
                   <Dropdown options={genres.listOfGenresFromAPI} selectedValue={genres.selectedGenre} changed={gendreChanged} />
                 </div>
 
