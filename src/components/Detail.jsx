@@ -11,12 +11,12 @@ const Detail = ({album, artists, name}) => {
                 </img>
             </div>
             <div className="row col-sm-12 px-0">
-                <label htmlFor={name} className="form-label col-sm-12">
+                <label htmlFor={name} className="form-label col-sm-12" style={{color: '#1656E4'}}>
                    Track : {name}
                 </label>
             </div>
             <div className="row col-sm-12 px-0">
-                <label htmlFor={artists[0].name} className="form-label col-sm-12">
+                <label htmlFor={artists[0].name} className="form-label col-sm-12" style={{color: '#1656E4'}}>
                    Artist : {artists[0].name}
                 </label>
             </div>

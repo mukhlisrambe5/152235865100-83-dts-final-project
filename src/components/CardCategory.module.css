@@ -8,3 +8,8 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
+.genreTitle {
+  text-align: center;
+  color: #2871cc;
+}

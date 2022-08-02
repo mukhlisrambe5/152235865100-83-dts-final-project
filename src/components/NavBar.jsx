@@ -23,13 +23,13 @@ const NavBar = () => {
       <AppBar position="static">
         <Toolbar>
         <Typography variant="h8" component="div" className={styles.grow}>
-            <Box sx={{ display: 'flex', gap: '2em', fontSize: '1.5em', color:"inherit"}}>
+            <Box className={styles.box}>
               <Link to="/" style={{textDecoration: 'none', color: 'white'}}>Home</Link>
               <Link to="/search" style={{marginLeft:"0.5em", textDecoration: 'none', color: 'white'}}>Search</Link>
-              <Link to="about" style={{marginLeft:"0.5em", textDecoration: 'none', color: 'white'}}>About</Link>
+              <Link to="/about" style={{marginLeft:"0.5em", textDecoration: 'none', color: 'white'}}>About</Link>
             </Box>
           </Typography>
-          <Button color="inherit" onClick={buttonLogoutOnClickHandler}>
+          <Button sx={{display: 'flex', fontSize:'1.3em', fontWeight:'normal'}} color='inherit' onClick={buttonLogoutOnClickHandler}>
             Logout
           </Button>
         </Toolbar>

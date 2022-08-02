@@ -9,13 +9,15 @@ const Listbox = props => {
 
     return (
         <div className="col-sm-6 px-0">
-            <div className="list-group" style={{flexDirection: 'column'}}>
+            <div className="list-group" style={{flexDirection: 'row', }}>
                 {
                     props.items.map((item, idx) => 
                     <button style={{width:'500px', 
                         paddingTop: '1em',
                         paddingBottom: '1em',
-                        textAlign: 'left'}} 
+                        textAlign: 'left',
+                        fontSize: '16px',
+                        color: '#003F9A'}} 
                         key={idx}
                         onClick={clicked}
                         className="list-group-item list-group-item-action list-group-item-light"

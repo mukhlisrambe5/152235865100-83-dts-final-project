@@ -42,7 +42,7 @@ const HomePage = ()=>{
     return (
       <>  
           <Box>
-          <Typography variant='h6' sx={{textAlign: 'center',marginTop: '1em', marginBottom:'1em', fontWeight: 'bold', fontSize: '25px'}}>Musics' Genres</Typography>
+          <Typography variant='h6' sx={{textAlign: 'center',marginTop: '1em', marginBottom:'1em', fontWeight: 'bold', fontSize: '25px', color: '#003F9A'}}>Musics' Genres</Typography>
         </Box>
 
           <Box className={styles.container}>

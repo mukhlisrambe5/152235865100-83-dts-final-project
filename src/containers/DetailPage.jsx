@@ -46,7 +46,7 @@ const DetailPage = ()=>{
     return (
       <>  <NavBar />
           <Box>
-          <Typography variant='h6' sx={{textAlign: 'center',marginTop: '1em', marginBottom:'1em', fontWeight: 'bold'}}>Musics' Genres Detail</Typography>
+          <Typography variant='h6' sx={{textAlign: 'center',marginTop: '1em', marginBottom:'1em', fontWeight: 'bold', color: '#003F9A', fontSize: '25px'}}>Musics' Genres Detail</Typography>
           </Box>
 
           <Box className={styles.container}>

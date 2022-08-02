@@ -24,7 +24,7 @@ const CardCategory = ({propMusic})=> {
               ></CardMedia>
               
               <CardContent>
-              <Typography variant="h6" sx={{textAlign: 'center'}}>{propMusic.name}</Typography>
+              <Typography className={styles.genreTitle} variant="h6" >{propMusic.name}</Typography>
               </CardContent>
                   
         </Box>

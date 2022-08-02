@@ -15,6 +15,8 @@ import ProtectedComponentLogged from './components/ProtectedComponentLogged';
 import About from './containers/About';
 import Search from './containers/Search';
 import DetailPage from './containers/DetailPage';
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -45,16 +47,21 @@ root.render(
           </ProtectedComponentLogged>
         } />
         <Route path="search" element={
-            <ProtectedComponentLogged>
+            <ProtectedComponent>
               <Search />
-            </ProtectedComponentLogged> 
+            </ProtectedComponent> 
         } />
         <Route path="about" element={
-            <ProtectedComponentLogged>
+            <ProtectedComponent>
               <About />
-            </ProtectedComponentLogged> 
+            </ProtectedComponent> 
         } />
-        <Route path="*" element={<h1>404 - Halaman tidak ditemukan</h1>} />
+        <Route path="*" element={ <>
+        <NavBar />
+        <h1 style={{textAlign: 'center', marginTop: '15%'}}>404 - Halaman tidak ditemukan</h1>
+        <Footer />
+        </>
+        } />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

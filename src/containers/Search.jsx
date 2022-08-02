@@ -109,12 +109,12 @@ const Search = ()=>{
           <div className={styles.container}>
               <div className={styles.containerOption}>
                 <div className={styles.genre}>
-                  <label htmlFor="" style={{marginRight: '1em'}}>Genre:</label>
+                  <label htmlFor="" style={{marginRight: '1em', color: '#468FEA'}}>Genre:</label>
                   <Dropdown options={genres.listOfGenresFromAPI} selectedValue={genres.selectedGenre} changed={gendreChanged} />
                 </div>
 
                 <div className={styles.playlist}>
-                  <label htmlFor="" style={{marginRight: '0.6em'}}>Playlist:</label>
+                  <label htmlFor="" style={{marginRight: '0.6em' , color: '#468FEA' }}>Playlist:</label>
                   <Dropdown options={playlist.listOfPlaylistFromAPI}  selectedValue={playlist.selectedPlaylist} changed={playlistChanged}/>
                 </div>
                 <button type='submit' className={styles.search}>Search</button>
